@@ -1,0 +1,15 @@
+* {
+  font-weight: normal;
+  font-family: Avenir,BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body {
+  background-color: rgb(250, 251, 248);
+  overflow-y: scroll; /* prevents site's shifting because of scrollbar apper */
+}
+.App {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+

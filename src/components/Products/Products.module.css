@@ -1,0 +1,81 @@
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .productsContainer {
+        flex-direction: column;
+    }
+}
+
+.title {
+    margin-top: 20px;
+}
+.send-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 7px;
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .send-post {
+        width: 500px;
+    }
+}
+
+.sendProductButton {
+    border-radius: 5px;
+    outline: 0;
+    border: 1px rgba(128, 149, 129, 0.503) solid;
+    padding: 7px;
+    margin-top: 10px;
+    align-self: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(6, 50, 7);
+    width: 100px;
+}
+.sendProductButton:hover {
+    background-color: #3ba749;
+    color: white;
+    transition: 0.2s;
+}
+.sendProductButton:active { 
+    outline: 0 !important;
+    transform: translateY(2px);
+    transition-timing-function: ease;
+}
+.send-product-button:focus { 
+    outline: 0 !important;
+}
+
+.postProductWrapper {
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    color: rgb(6, 50, 7);
+}
+.postProductWrapper > textarea {
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(87, 147, 85);
+    background: rgb(228, 248, 234);
+    outline: 0;
+    font-size: 10px;
+}
+::placeholder { 
+    font-size: 15px !important;
+  }

@@ -1,0 +1,47 @@
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: 0 20px 20px 20px;
+    text-align: center;
+    padding: 15px 15px 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: rgb(6, 50, 7);
+    display: flex;
+    flex-direction: column;
+}
+.card h1 {
+    font-size: 15px;
+}
+.deleteButton {
+    border-radius: 5px;
+    outline: 0;
+    border: 1px rgba(128, 149, 129, 0.503) solid;
+    font-size: small;
+    font-weight: 550;
+    color: rgb(6, 50, 7);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(239, 239, 239)
+} 
+.deleteButton:hover {
+    background-color: #3ba749;
+    color: white;
+    transition: 0.2s;
+}
+.deleteButton:active { 
+    outline: 0 !important;
+    transform: translateY(2px);
+    transition-timing-function: ease;
+}
+.deleteButton:focus { 
+    outline: 0 !important;
+}
+

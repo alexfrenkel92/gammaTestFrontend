@@ -3,8 +3,8 @@ import ProductCard from './ProductCard';
 import classes from './Products.module.css';
 import Button from '../Button/Button';
 
-// const backendUrl = 'https://gamma-test-backend.herokuapp.com'
-const backendUrl = 'http://localhost:8080'
+const backendUrl = 'https://gamma-test-backend.herokuapp.com'
+// const backendUrl = 'http://localhost:8080'
 
 const Products = () => {
 

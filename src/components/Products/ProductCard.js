@@ -9,11 +9,11 @@ const ProductCard = (props) => {
                 <div className="card" key={props.product.productId}>
                     <h1>Product name: {props.product.productName}</h1>
                     <h1>Product Id: {props.product.productId}</h1>
-                    <p className="price">Product price: {props.productPrice}</p>
+                    <p className="price">Product price: {props.product.productPrice}</p>
                     <Button
                         className="deleteButton"
                         textContent='Delete'
-                        onclick={(e) => props.deleteProduct(e, props.product.productId)}
+                        onClick={props.deleteProduct}
                     />
                 </div>
             </div>

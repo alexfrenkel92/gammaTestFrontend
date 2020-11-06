@@ -3,7 +3,8 @@ import ProductCard from './ProductCard';
 import classes from './Products.module.css';
 import Button from '../Button/Button';
 
-const backendUrl = 'https://gamma-test-backend.herokuapp.com'
+// const backendUrl = 'https://gamma-test-backend.herokuapp.com'
+const backendUrl = 'http://localhost:8080'
 
 const Products = () => {
 
@@ -97,11 +98,11 @@ const Products = () => {
                 <h2>Products in Database</h2>
             </div>
             <div className={`${classes.productsContainer} row`}>
-                {products.map(product =>
+                {products.map((product) =>
                     <ProductCard 
                         key={product.productId}
                         product={product}
-                        deleteProduct={deleteProduct} />
+                        deleteProduct={() => deleteProduct(product.productId)} />
                 )}
             </div>
             <div className={classes.title}>
